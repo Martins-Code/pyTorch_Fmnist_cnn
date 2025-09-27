@@ -70,7 +70,3 @@ The long-term goal is to build a **web application** where users can upload an i
 - Matplotlib
 - Flask (later for the web app)
 
-Install requirements (later you’ll add them into `requirements.txt`):
-
-```bash
-pip install torch torchvision matplotlib flask
