@@ -1,32 +1,34 @@
 # 👗 Fashion-MNIST Classifier (PyTorch + Flask)
+# 👗 Fashion-MNIST Classifier (PyTorch + Flask)
 
-This project is a step-by-step learning journey into **deep learning with PyTorch**, starting with training a model on the [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist).  
+This project is a step-by-step learning journey into **deep learning with PyTorch**, starting with training a model on the [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist).
 
 The long-term goal is to build a **web application** where users can upload an image of clothing, and the trained model will predict the fashion category.
 
 ---
+
 ## 📂 Project Structure
 
-- **app/** → Flask web application  
-  - **static/** → stores CSS, JS, and images (currently empty)  
-  - **templates/** → stores HTML templates (currently empty)  
-  - **app.py** → main Flask app (to be implemented later)  
+- **app/** → Flask web application (to be implemented soon)  
+  - **static/** → stores CSS, JS, and images  
+  - **templates/** → stores HTML templates  
+  - **app.py** → Flask app entrypoint  
 
 - **models/** → trained models  
-  - **fashion_mnist.pth** → saved model weights (after training)  
+  - **fashion_mnist.pth** → saved model weights (trained CNN)  
 
 - **notebook/** → Jupyter notebooks  
-  - **f_mnist_train.ipynb** → training notebook for experiments  
+  - **f_mnist_train.ipynb** → training experiments on Fashion-MNIST  
 
-- **scripts/** → Python helper scripts  
-  - **preprocess.py** → preprocessing (resize + convert images to grayscale 28×28)  
-  - **predict.py** → loads model and makes predictions  
+- **scripts/** → helper scripts  
+  - **preprocess.py** → preprocessing pipeline (grayscale, resize, tensor)  
+  - **predict.py** → model loading + inference functions  
 
-- **data/** → dataset storage (ignored in Git, will auto-download)  
+- **data/** → dataset storage (ignored in Git, auto-downloaded by PyTorch)  
 
-- **.gitignore** → ignore unnecessary files (like `.venv/`, datasets, etc.)  
-- **requirements.txt** → dependencies for training and web app  
-- **README.md** → project documentation  
+- **.gitignore** → ignores `.venv/`, datasets, cache, etc.  
+- **requirements.txt** → Python dependencies  
+- **README.md** → documentation 
 
 
 
