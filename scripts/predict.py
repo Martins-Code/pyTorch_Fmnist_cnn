@@ -12,6 +12,8 @@ if str(ROOT) not in sys.path:
 # Now safe to import local modules
 from scripts.preprocess import preprocess_image
 from scripts.model import FashionClassifier
+from typing import Union
+
 
 # class labels (FashionMNIST)
 CLASSES = [

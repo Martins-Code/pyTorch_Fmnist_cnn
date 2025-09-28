@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Prediction Result</h1>
+
+    <div class="result-box">
+      <p><strong>Predicted Label:</strong> {{ label }}</p>
+      <p><strong>Confidence:</strong> {{ confidence }}%</p>
+    </div>
+
+    {% if image_data %}
+      <img src="{{ image_data }}" class="img-preview" alt="Uploaded Image">
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('index') }}"><button>⬅️ Try Another</button></a>
+  </div>
+</body>
+</html>
